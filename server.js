@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-
+app.use(express.json()); 
 app.use(cors({
   origin: 'https://portfolio-7wgzkej31-manjunath2133s-projects.vercel.app',
   credentials: true, // required for cookies

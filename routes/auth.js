@@ -9,7 +9,8 @@ const router = express.Router();
 // Signup Route
 router.post('/signup', async (req, res) => {
   const { name, email, password } = req.body;
-  
+  console.log("📩 Signup API hit");
+  console.log("📨 Request body:", req.body);
   try {
     // Check if user already exists
     const userExists = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
