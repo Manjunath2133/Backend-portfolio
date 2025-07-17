@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://portfolio-five-jet-cu2kbrd942.vercel.app',
   credentials: true, // required for cookies
 }));
 app.use(bodyParser.json());
