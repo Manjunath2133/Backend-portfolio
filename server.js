@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 
 
 app.use(cors({
-  origin: ['https://portfolio-five-jet-cu2kbrd942.vercel.app','https://portfolio-7wgzkej31-manjunath2133s-projects.vercel.app'],
+  origin: 'https://portfolio-7wgzkej31-manjunath2133s-projects.vercel.app',
   credentials: true, // required for cookies
 }));
 app.use(bodyParser.json());
